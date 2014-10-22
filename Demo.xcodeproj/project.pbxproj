@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CFFF055107F509C8B10B4F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CFFFF87FD2B55F709C04E0C /* Main.storyboard */; };
+		3CFFF67D72E8481A377A60A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFF38D5F70D358765D5139 /* ViewController.m */; };
+		3CFFF72C63EAEED9F2BBBF4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CFFFB1BE39E147551DD53A0 /* Images.xcassets */; };
+		3CFFF881A41F66CBA03FD1D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFF0B79F1848308C271A74 /* main.m */; };
+		3CFFF8E6984912C34EBD75FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFFF21998C088AC85004A5C /* UIKit.framework */; };
+		3CFFFE4DCBC9DA5F49FE2D15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFF4ED3C5B22D73347F1CA /* AppDelegate.m */; };
+		3CFFFE8C719A0CF09D9BB9B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFFFBF3E20334AB43C8F12E /* CoreGraphics.framework */; };
+		3CFFFE8EA14FFA902FDFD01C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CFFF5A26A7DEC23268D37AE /* InfoPlist.strings */; };
+		3CFFFF2635A5510AC9EB7267 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFFF4FB6AFFA306A2D55B18 /* Foundation.framework */; };
+		EC33436F19F8494400A935C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFFF4FB6AFFA306A2D55B18 /* Foundation.framework */; };
+		EC33437419F8494400A935C4 /* BFDragGestureRecognizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EC33437319F8494400A935C4 /* BFDragGestureRecognizer.h */; };
+		EC33437619F8494400A935C4 /* BFDragGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = EC33437519F8494400A935C4 /* BFDragGestureRecognizer.m */; };
+		EC33439219F849F700A935C4 /* libBFDragGestureRecognizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC33436E19F8494400A935C4 /* libBFDragGestureRecognizer.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC33439019F849F300A935C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CFFF1B28BD6BA7FF0996BE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC33436D19F8494400A935C4;
+			remoteInfo = BFDragGestureRecognizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC33436C19F8494400A935C4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				EC33437419F8494400A935C4 /* BFDragGestureRecognizer.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3CFFF0B79F1848308C271A74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3CFFF19231A51F6F4D180031 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3CFFF21998C088AC85004A5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3CFFF38D5F70D358765D5139 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3CFFF4ED3C5B22D73347F1CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3CFFF4FB6AFFA306A2D55B18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3CFFF62BE70ED5640C943B7C /* Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "Demo-Info.plist"; sourceTree = "<group>"; };
+		3CFFF6AA6E172A7D02611792 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3CFFF7181B0C8EBF3E5F29D6 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
+		3CFFFB1BE39E147551DD53A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3CFFFB2279EC8FA5D782B96B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3CFFFBF3E20334AB43C8F12E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3CFFFDE2FD60FB07DD6F19B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CFFFEA8C05BEE7775EFEC6C /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CFFFECF8D40FE70C1687316 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC33436E19F8494400A935C4 /* libBFDragGestureRecognizer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBFDragGestureRecognizer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC33437219F8494400A935C4 /* BFDragGestureRecognizer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BFDragGestureRecognizer-Prefix.pch"; sourceTree = "<group>"; };
+		EC33437319F8494400A935C4 /* BFDragGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFDragGestureRecognizer.h; sourceTree = "<group>"; };
+		EC33437519F8494400A935C4 /* BFDragGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFDragGestureRecognizer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CFFF283C637A0FBA69C65CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC33439219F849F700A935C4 /* libBFDragGestureRecognizer.a in Frameworks */,
+				3CFFFF2635A5510AC9EB7267 /* Foundation.framework in Frameworks */,
+				3CFFFE8C719A0CF09D9BB9B9 /* CoreGraphics.framework in Frameworks */,
+				3CFFF8E6984912C34EBD75FC /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC33436B19F8494400A935C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC33436F19F8494400A935C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CFFF41A8B7CEC5BD1535A39 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				3CFFFAB96AC3001E2D2CB641 /* Supporting Files */,
+				3CFFF19231A51F6F4D180031 /* AppDelegate.h */,
+				3CFFF4ED3C5B22D73347F1CA /* AppDelegate.m */,
+				3CFFFB1BE39E147551DD53A0 /* Images.xcassets */,
+				3CFFFF87FD2B55F709C04E0C /* Main.storyboard */,
+				3CFFFECF8D40FE70C1687316 /* ViewController.h */,
+				3CFFF38D5F70D358765D5139 /* ViewController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		3CFFF9055BE1402A6FBD9451 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CFFFEA8C05BEE7775EFEC6C /* Demo.app */,
+				EC33436E19F8494400A935C4 /* libBFDragGestureRecognizer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CFFFAB96AC3001E2D2CB641 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CFFF62BE70ED5640C943B7C /* Demo-Info.plist */,
+				3CFFF5A26A7DEC23268D37AE /* InfoPlist.strings */,
+				3CFFF0B79F1848308C271A74 /* main.m */,
+				3CFFF7181B0C8EBF3E5F29D6 /* Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CFFFC5E5082192B39AE9E22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CFFF4FB6AFFA306A2D55B18 /* Foundation.framework */,
+				3CFFFBF3E20334AB43C8F12E /* CoreGraphics.framework */,
+				3CFFF21998C088AC85004A5C /* UIKit.framework */,
+				3CFFF6AA6E172A7D02611792 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CFFFDF021AF73F12AB87933 = {
+			isa = PBXGroup;
+			children = (
+				EC33437019F8494400A935C4 /* BFDragGestureRecognizer */,
+				3CFFF9055BE1402A6FBD9451 /* Products */,
+				3CFFFC5E5082192B39AE9E22 /* Frameworks */,
+				3CFFF41A8B7CEC5BD1535A39 /* Demo */,
+			);
+			sourceTree = "<group>";
+		};
+		EC33437019F8494400A935C4 /* BFDragGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				EC33437319F8494400A935C4 /* BFDragGestureRecognizer.h */,
+				EC33437519F8494400A935C4 /* BFDragGestureRecognizer.m */,
+				EC33437119F8494400A935C4 /* Supporting Files */,
+			);
+			path = BFDragGestureRecognizer;
+			sourceTree = "<group>";
+		};
+		EC33437119F8494400A935C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC33437219F8494400A935C4 /* BFDragGestureRecognizer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CFFF05124F12F19A335597C /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CFFF7E431F9B0FCBB8B34EF /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				3CFFF7BC69B86DCDCD59F4AD /* Sources */,
+				3CFFF283C637A0FBA69C65CE /* Frameworks */,
+				3CFFF0920F192EDDE8ABA539 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC33439119F849F300A935C4 /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 3CFFFEA8C05BEE7775EFEC6C /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC33436D19F8494400A935C4 /* BFDragGestureRecognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC33438A19F8494400A935C4 /* Build configuration list for PBXNativeTarget "BFDragGestureRecognizer" */;
+			buildPhases = (
+				EC33436A19F8494400A935C4 /* Sources */,
+				EC33436B19F8494400A935C4 /* Frameworks */,
+				EC33436C19F8494400A935C4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BFDragGestureRecognizer;
+			productName = BFDragGestureRecognizer;
+			productReference = EC33436E19F8494400A935C4 /* libBFDragGestureRecognizer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CFFF1B28BD6BA7FF0996BE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Balazs Faludi";
+			};
+			buildConfigurationList = 3CFFFCB9B5CDE74FD2261DF6 /* Build configuration list for PBXProject "Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3CFFFDF021AF73F12AB87933;
+			productRefGroup = 3CFFF9055BE1402A6FBD9451 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CFFF05124F12F19A335597C /* Demo */,
+				EC33436D19F8494400A935C4 /* BFDragGestureRecognizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CFFF0920F192EDDE8ABA539 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CFFFE8EA14FFA902FDFD01C /* InfoPlist.strings in Resources */,
+				3CFFF72C63EAEED9F2BBBF4E /* Images.xcassets in Resources */,
+				3CFFF055107F509C8B10B4F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CFFF7BC69B86DCDCD59F4AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CFFF881A41F66CBA03FD1D8 /* main.m in Sources */,
+				3CFFFE4DCBC9DA5F49FE2D15 /* AppDelegate.m in Sources */,
+				3CFFF67D72E8481A377A60A5 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC33436A19F8494400A935C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC33437619F8494400A935C4 /* BFDragGestureRecognizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC33439119F849F300A935C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC33436D19F8494400A935C4 /* BFDragGestureRecognizer */;
+			targetProxy = EC33439019F849F300A935C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CFFF5A26A7DEC23268D37AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CFFFB2279EC8FA5D782B96B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3CFFFF87FD2B55F709C04E0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CFFFDE2FD60FB07DD6F19B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CFFF03A858828EB59B2BE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
+				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3CFFFAC0D808662D39E3926C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3CFFFAE83C00056C2C31BFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
+				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3CFFFE095F7D02995B05D30E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC33438B19F8494400A935C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BFDragGestureRecognizer.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BFDragGestureRecognizer/BFDragGestureRecognizer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EC33438C19F8494400A935C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BFDragGestureRecognizer.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BFDragGestureRecognizer/BFDragGestureRecognizer-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CFFF7E431F9B0FCBB8B34EF /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CFFF03A858828EB59B2BE42 /* Debug */,
+				3CFFFAE83C00056C2C31BFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CFFFCB9B5CDE74FD2261DF6 /* Build configuration list for PBXProject "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CFFFAC0D808662D39E3926C /* Debug */,
+				3CFFFE095F7D02995B05D30E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC33438A19F8494400A935C4 /* Build configuration list for PBXNativeTarget "BFDragGestureRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC33438B19F8494400A935C4 /* Debug */,
+				EC33438C19F8494400A935C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CFFF1B28BD6BA7FF0996BE2 /* Project object */;
+}
