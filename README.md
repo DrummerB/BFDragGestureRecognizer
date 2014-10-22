@@ -27,7 +27,7 @@ Add the gesture recognizer to the view(s) you want to drag:
     [dragRecognizer addTarget:self action:@selector(dragRecognized:)];
     [view addGestureRecognizer:dragRecognizer];
     
-Implement the gesture handler method. This is very similar to what you would do using a standard UIPanGestureRecodnizer:
+Implement the gesture handler method. This is very similar to what you would do using a standard UIPanGestureRecognizer:
 
 	- (void)dragRecognized:(BFDragGestureRecognizer *)recognizer {
 	    UIView *view = recognizer.view;
