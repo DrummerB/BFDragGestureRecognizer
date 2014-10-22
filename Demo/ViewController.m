@@ -15,9 +15,9 @@
 @end
 
 @implementation ViewController {
-    CGPoint startCenter;
-    UIScrollView *scrollView;
-    UIView *contentView;
+    CGPoint _startCenter;
+    UIScrollView *_scrollView;
+    UIView *_contentView;
 }
 
 - (void)viewDidLoad
@@ -30,19 +30,19 @@
     CGRect rect = (CGRect){CGPointZero, scrollViewSize};
     CGRect labelFrame = CGRectMake(0, 0, 284, 62);
 
-    scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
-    scrollView.contentSize = scrollViewSize;
-    scrollView.contentInset = UIEdgeInsetsMake(64, 0, 44, 0);
-    scrollView.minimumZoomScale = 1;
-    scrollView.maximumZoomScale = 3;
-    scrollView.delegate = self;
-    UIEdgeInsets indicatorInsets = scrollView.scrollIndicatorInsets;
-    indicatorInsets.bottom = scrollView.contentInset.bottom;
-    scrollView.scrollIndicatorInsets = indicatorInsets;
-    [self.view insertSubview:scrollView atIndex:0];
+    _scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+    _scrollView.contentSize = scrollViewSize;
+    _scrollView.contentInset = UIEdgeInsetsMake(64, 0, 44, 0);
+    _scrollView.minimumZoomScale = 1;
+    _scrollView.maximumZoomScale = 3;
+    _scrollView.delegate = self;
+    UIEdgeInsets indicatorInsets = _scrollView.scrollIndicatorInsets;
+    indicatorInsets.bottom = _scrollView.contentInset.bottom;
+    _scrollView.scrollIndicatorInsets = indicatorInsets;
+    [self.view insertSubview:_scrollView atIndex:0];
 
-    contentView = [[UIView alloc] initWithFrame:rect];
-    [scrollView addSubview:contentView];
+    _contentView = [[UIView alloc] initWithFrame:rect];
+    [_scrollView addSubview:_contentView];
 
     NSString *text = @"Tap & hold a colored view to start dragging it. "
             "Move it to the edge of the scroll view to start auto-scrolling.";
@@ -51,9 +51,9 @@
     label.text = text;
     label.textAlignment = NSTextAlignmentCenter;
     label.center = CGPointMake(scrollViewWidth / 2, scrollViewHeight / 2);
-    [contentView addSubview:label];
+    [_contentView addSubview:label];
 
-    scrollView.contentOffset = CGPointMake(label.center.x - scrollView.bounds.size.width / 2, label.center.y - scrollView.bounds.size.height / 2);
+    _scrollView.contentOffset = CGPointMake(label.center.x - _scrollView.bounds.size.width / 2, label.center.y - _scrollView.bounds.size.height / 2);
 
 
     int count = 100;
@@ -71,7 +71,7 @@
             randomRect = (CGRect){randomPoint, CGSizeMake(50, 50)};
 
             canPlace = YES;
-            for (UIView *subview in contentView.subviews) {
+            for (UIView *subview in _contentView.subviews) {
                 if (CGRectIntersectsRect(randomRect, subview.frame)) {
                     canPlace = NO;
                     break;
@@ -87,7 +87,7 @@
         CGFloat brightness = (CGFloat)((random() % 128 / 256.0) + 0.5);  //  0.5 to 1.0, away from black
         UIColor *randomColor = [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
         view.backgroundColor = randomColor;
-        [contentView addSubview:view];
+        [_contentView addSubview:view];
 
         // Add the drag gesture recognizer with default values.
         BFDragGestureRecognizer *holdDragRecognizer = [[BFDragGestureRecognizer alloc] init];
@@ -100,7 +100,7 @@
     UIView *view = recognizer.view;
     if (recognizer.state == UIGestureRecognizerStateBegan) {
         // When the gesture starts, remember the current position, and animate the it.
-        startCenter = view.center;
+        _startCenter = view.center;
         [view.superview bringSubviewToFront:view];
         [UIView animateWithDuration:0.2 animations:^{
             view.transform = CGAffineTransformMakeScale(1.2, 1.2);
@@ -109,8 +109,8 @@
     } else if (recognizer.state == UIGestureRecognizerStateChanged) {
         // During the gesture, we just add the gesture's translation to the saved original position.
         // The translation will account for the changes in contentOffset caused by auto-scrolling.
-        CGPoint translation = [recognizer translationInView:contentView];
-        CGPoint center = CGPointMake(startCenter.x + translation.x, startCenter.y + translation.y);
+        CGPoint translation = [recognizer translationInView:_contentView];
+        CGPoint center = CGPointMake(_startCenter.x + translation.x, _startCenter.y + translation.y);
         view.center = center;
     } else if (recognizer.state == UIGestureRecognizerStateEnded || recognizer.state == UIGestureRecognizerStateCancelled) {
         [UIView animateWithDuration:0.2 animations:^{
@@ -123,7 +123,7 @@
 }
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView1 {
-    return contentView;
+    return _contentView;
 }
 
 - (UIBarPosition)positionForBar:(id <UIBarPositioning>)bar {
