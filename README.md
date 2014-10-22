@@ -1,4 +1,4 @@
-# BF
+# BFDragGestureRecognizer
 
 ![image](http://i.imgur.com/lfkzvgY.gif)
 
