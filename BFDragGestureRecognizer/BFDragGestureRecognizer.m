@@ -169,10 +169,11 @@
 
     CGFloat offsetX = _startContentOffset.x + _amountScrolled.x;
     CGFloat offsetY = _startContentOffset.y + _amountScrolled.y;
-    self.scrollView.contentOffset = CGPointMake(offsetX, offsetY);
-
-    self.state = UIGestureRecognizerStateChanged;
-
+    CGPoint offset = CGPointMake(offsetX, offsetY);
+    if (!CGPointEqualToPoint(self.scrollView.contentOffset, offset)) {
+        self.scrollView.contentOffset = offset;
+        self.state = UIGestureRecognizerStateChanged;
+    }
 }
 
 #pragma mark - Events
