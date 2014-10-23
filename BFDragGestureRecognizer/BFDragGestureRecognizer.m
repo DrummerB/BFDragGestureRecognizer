@@ -39,6 +39,7 @@
         _minimumMovement = 0;
         _maximumMovement = 10;
         _autoScrollInsets = UIEdgeInsetsMake(44, 44, 44, 44);
+        _frame = CGRectNull;
     }
     return self;
 }
@@ -69,6 +70,16 @@
         _scrollView = [self enclosingScrollView];
     }
     return _scrollView;
+}
+
+- (CGRect)frame {
+    if (CGRectIsNull(_frame)) {
+        if (self.view) {
+            return self.view.bounds;
+        }
+        return CGRectZero;
+    }
+    return _frame;
 }
 
 - (void)holdTimerFired:(NSTimer *)timer {
@@ -170,9 +181,16 @@
     NSUInteger count = [event touchesForGestureRecognizer:self].count;
     if (count != 1) {
         self.state = UIGestureRecognizerStateFailed;
+        return;
     }
 
     UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView:self.view];
+    if (!CGRectContainsPoint(self.frame, location)) {
+        [self ignoreTouch:touch forEvent:event];
+        return;
+    }
+
     _startLocation = [touch locationInView:nil];
     _startContentOffset = self.scrollView.contentOffset;
 

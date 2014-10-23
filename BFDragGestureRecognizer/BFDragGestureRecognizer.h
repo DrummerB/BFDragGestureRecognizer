@@ -22,6 +22,11 @@
 /// The default value is 10 points, the same as for UILongPressGestureRecognizer.
 @property (nonatomic) CGFloat maximumMovement;
 
+/// A rectangle in the gesture recognizer's view's coordinate system. Touches outside of this frame will be ignored.
+/// This is a quick way to limit the draggable part to a certain area of the view, without adding subviews, subclassing or delegate methods.
+/// The default value is the bounds of the gesture recognizer's view, i.e. the entire view.
+@property (nonatomic) CGRect frame;
+
 /// The scroll view that should be auto-scrolled by the gesture the finger is moved to the edges of the scroll view.
 /// By default, this will automatically be set to the nearest ancestor (of the gesture's view) in the view hierarchy that is a scroll view.
 /// If the gesture's view is not directly embedded in the scroll view you want to auto-scroll, you can set the scroll view here.
