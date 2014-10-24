@@ -27,27 +27,29 @@ Alternatively, you can just drop the `BFDragGestureRecognizer.{h,m}` files into 
 
 Add the gesture recognizer to the view(s) you want to drag:
 
-	BFDragGestureRecognizer *dragRecognizer = [[BFDragGestureRecognizer alloc] init];
-    [dragRecognizer addTarget:self action:@selector(dragRecognized:)];
-    [view addGestureRecognizer:dragRecognizer];
+```objc
+BFDragGestureRecognizer *dragRecognizer = [[BFDragGestureRecognizer alloc] init];
+[dragRecognizer addTarget:self action:@selector(dragRecognized:)];
+[view addGestureRecognizer:dragRecognizer];
+```
     
 Implement the gesture handler method. This is very similar to what you would do using a standard UIPanGestureRecognizer:
 
-	- (void)dragRecognized:(BFDragGestureRecognizer *)recognizer {
-	    UIView *view = recognizer.view;
-	    if (recognizer.state == UIGestureRecognizerStateBegan) {
-	        // When the gesture starts, remember the current position.
-	        _startCenter = view.center;
-	    } else if (recognizer.state == UIGestureRecognizerStateChanged) {
-	        // During the gesture, we just add the gesture's translation to the saved original position.
-	        // The translation will account for the changes in contentOffset caused by auto-scrolling.
-	        CGPoint translation = [recognizer translationInView:_contentView];
-	        CGPoint center = CGPointMake(_startCenter.x + translation.x, 
-	        							 _startCenter.y + translation.y);
-	        view.center = center;
-	    } 
-	}
-    
+```objc
+- (void)dragRecognized:(BFDragGestureRecognizer *)recognizer {
+    UIView *view = recognizer.view;
+    if (recognizer.state == UIGestureRecognizerStateBegan) {
+        // When the gesture starts, remember the current position.
+        _startCenter = view.center;
+    } else if (recognizer.state == UIGestureRecognizerStateChanged) {
+        // During the gesture, we just add the gesture's translation to the saved original position.
+        // The translation will account for the changes in contentOffset caused by auto-scrolling.
+        CGPoint translation = [recognizer translationInView:_contentView];
+        CGPoint center = CGPointMake(_startCenter.x + translation.x, _startCenter.y + translation.y);
+        view.center = center;
+    }
+}
+```
 
 
 License
