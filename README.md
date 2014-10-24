@@ -1,12 +1,16 @@
 # BFDragGestureRecognizer
 
+
+[![Pod Version](http://img.shields.io/cocoapods/v/BFDragGestureRecognizer.svg?style=flat)](https://github.com/DrummerB/BFDragGestureRecognizer)
+[![Pod Platform](http://img.shields.io/cocoapods/p/BFDragGestureRecognizer.svg?style=flat)](https://github.com/DrummerB/BFDragGestureRecognizer)
+[![Pod License](http://img.shields.io/cocoapods/l/BFDragGestureRecognizer.svg?style=flat)](http://opensource.org/licenses/BSD-3-Clause)
+[![Dependency Status](https://www.versioneye.com/objective-c/bfdraggesturerecognizer/badge.svg?style=flat)](https://www.versioneye.com/objective-c/bfdraggesturerecognizer)
+
+BFDragGestureRecognizer is a UIGestureRecognizer subclass that can be used to drag views inside a scroll view with automatic scrolling at the edges of the scroll view.
+
 ![image](http://i.imgur.com/lfkzvgY.gif)
 
 
-Summary
--------
-
-BFDragGestureRecognizer is a UIGestureRecognizer subclass that can be used to drag views inside a scroll view with automatic scrolling at the edges of the scroll view.
 
 Instructions
 ------------
