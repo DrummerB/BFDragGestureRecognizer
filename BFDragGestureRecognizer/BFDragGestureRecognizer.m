@@ -188,7 +188,7 @@
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView:self.view];
     if (!CGRectContainsPoint(self.frame, location)) {
-        [self ignoreTouch:touch forEvent:event];
+        self.state = UIGestureRecognizerStateCancelled;
         return;
     }
 
